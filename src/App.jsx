@@ -39,7 +39,7 @@ class App extends Component {
     const { renderLoginForm, authenticated, message } = this.state;
     let performanceDataIndex;
     let renderLogin;
-    switch (true) {
+    switch(true) {
       case renderLoginForm && !authenticated:
         renderLogin = <LoginForm submitFormHandler={this.onLogin} />;
         break;
