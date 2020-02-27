@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import DisplayCooperResult from "./components/DisplayCooperResult";
 import InputFields from "./components/InputFields";
 import LoginForm from "./components/LoginForm";
-import { authenticate } from './Modules/auth';
+import { authenticate } from './modules/auth';
 
 class App extends Component {
   state = {
@@ -34,7 +34,7 @@ class App extends Component {
   render() {
     const { renderLoginForm, authenticated, message } = this.state;
     let renderLogin;
-    switch (true) {
+    switch(true) {
       case renderLoginForm && !authenticated:
         renderLogin = <LoginForm submitFormHandler={this.onLogin} />;
         break;
@@ -46,14 +46,14 @@ class App extends Component {
               onClick={() => this.setState({ renderLoginForm: true })}
             >
               Login
-              </button>
-            <p>{message}</p>
+            </button>
+            <p id="message">{message}</p>
           </>
         );
         break;
       case authenticated:
         renderLogin = (
-          <p>Hi {JSON.parse(sessionStorage.getItem("credentials")).uid}</p>
+          <p id="message">Hi {JSON.parse(sessionStorage.getItem("credentials")).uid}</p>
         );
         break;
     }
