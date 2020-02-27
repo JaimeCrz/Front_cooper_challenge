@@ -13,8 +13,8 @@ class App extends Component {
     renderLoginForm: false,
     authenticated: false,
     message: "",
-    entrySaved: false,
-    renderIndex: false
+    entrySaved: false
+    
   };
 
   onChangeHandler = e => {
