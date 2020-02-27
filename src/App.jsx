@@ -13,7 +13,8 @@ class App extends Component {
     renderLoginForm: false,
     authenticated: false,
     message: "",
-    entrySaved: false
+    entrySaved: false,
+    renderIndex: false
     
   };
 
