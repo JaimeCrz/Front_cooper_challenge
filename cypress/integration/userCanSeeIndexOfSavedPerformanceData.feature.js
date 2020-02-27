@@ -24,7 +24,7 @@ describe('User attempts to view his/her performance data', () => {
         })
     });
 
-    it('successfully', () => {
+    it('successfully', async () => {
         cy.get('#show-index').click()
         cy.get('#index').within(() => {
             cy.contains('Below Average')

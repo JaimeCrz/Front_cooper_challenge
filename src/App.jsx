@@ -67,8 +67,7 @@ class App extends Component {
                 updateIndex={this.state.updateIndex}
                 indexUpdated={() => this.setState({ updateIndex: false })}
               />
-              <button onClick={() => this.setState({ renderIndex: false })}
-              >Hide past entries</button>
+              <button onClick={() => this.setState({ renderIndex: false })}>Hide past entries</button>
             </>
           )
         } else {
@@ -77,7 +76,7 @@ class App extends Component {
             >Show past entries</button>
           )
         }
-    }
+      }
 
     return (
       <>
@@ -89,7 +88,7 @@ class App extends Component {
           age={this.state.age}
           authenticated={this.state.authenticated}
           entrySaved={this.state.entrySaved}
-          entryHandler={() => this.setState({ entrySaved: true })}
+          entryHandler={() => this.setState({ entrySaved: true, updateIndex: true })}
         />
         {performanceDataIndex}
       </>
