@@ -7,7 +7,7 @@ import axios from "axios";
 
 
 
-axios.defaults.baseURL = "https://cooper-api-challenge.herokuapp.com/api";
+axios.defaults.baseURL = "https://cooper-api-challenge.herokuapp.com/api/v1";
 
 
 ReactDOM.render(<App />, document.getElementById('root'));
