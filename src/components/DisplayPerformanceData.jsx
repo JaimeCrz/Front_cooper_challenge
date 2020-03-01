@@ -25,7 +25,7 @@ class DisplayPerformanceData extends Component {
     })
   }
 
-  
+
   //Gets and count every entry entered by the user. We check if entry it's empty too.
 
   countsCollection(collection, value) {
@@ -44,7 +44,7 @@ class DisplayPerformanceData extends Component {
   onlyLabels(collection) {
     let justLabels = [];
     collection.forEach(entry => {
-      if (entry.data.message && justLabels.indexOf(entry.data.message) === -1 ) {
+      if (entry.data.message && justLabels.indexOf(entry.data.message) === -1) {
         justLabels.push(entry.data.message);
       }
     })
@@ -69,7 +69,7 @@ class DisplayPerformanceData extends Component {
     const labels = [];
     let dataForPie = {};
 
-    
+
     if (this.state.performanceData != null) {
       this.state.performanceData.forEach(entry => {
         distances.push(entry.data.distance)
@@ -86,38 +86,26 @@ class DisplayPerformanceData extends Component {
       dataForPie = {
         labels: justLabels,
         datasets: [{
-            data: dataDistance,
-            backgroundColor:[
-              '#33FF79',
-              '#3367FF',
-              '#33BDFF',
-              '#33FFEB',
-              '#33FFC4',
-            ],
-          }],
-      };      
+          data: dataDistance,
+          backgroundColor: [
+            '#33FF79',
+            '#3367FF',
+            '#33BDFF',
+            '#33FFEB',
+            '#33FFC4',
+          ],
+        }],
+      };
     }
-
-    let dataForDiagram = {
-      datasets: [
-        {
-          data: distances,
-          label: "Your history"
-        }
-      ],
-      labels: labels
-    };
 
     return (
       <div id="index">
         {dataIndex}
-
-        <Line 
-        data={dataForDiagram}          
-        />
-
-        <Pie 
-          data= {dataForPie}
+        <Pie
+          data={dataForPie}
+          width={400}
+          height={200}
+          options={{ maintainAspectRatio: false }}
         />
       </div>
     )
