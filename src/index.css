@@ -5,7 +5,19 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url(./images/running.jpg);
+  background-size: cover;
+  text-align: center;
+  color:whitesmoke;
 }
+
+strong {
+  display: inline-block;
+  width: 50px;
+  border: 1px solid #000;
+  text-align: center;
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

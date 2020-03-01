@@ -5,6 +5,7 @@ import LoginForm from "./components/LoginForm";
 import { authenticate } from './modules/auth';
 import DisplayPerformanceData from './components/DisplayPerformanceData';
 
+
 class App extends Component {
   state = {
     distance: "",
@@ -81,6 +82,7 @@ class App extends Component {
 
     return (
       <>
+      <h1>Cooper test tracker</h1>
         <InputFields onChangeHandler={this.onChangeHandler} />
         {renderLogin}
         <DisplayCooperResult
