@@ -4,7 +4,6 @@ import InputFields from "./components/InputFields";
 import LoginForm from "./components/LoginForm";
 import { authenticate } from './modules/auth';
 import DisplayPerformanceData from './components/DisplayPerformanceData';
-import './index.css';
 
 
 class App extends Component {
