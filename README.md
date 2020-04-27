@@ -1,4 +1,4 @@
-# [Cooper Challenge] (https://festive-kowalevski-56e49c.netlify.app/)
+# [Cooper Challenge](https://festive-kowalevski-56e49c.netlify.app/)
 
 
 This project is a Cooper test performance calculator that takes in consideration the meters that you were capable of running in 12 minutes as well as your age and makes the proper calculations showing you how good your performance is.
