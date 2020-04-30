@@ -15,7 +15,6 @@ describe('User attempts to view his/her performance data', () => {
             }
         })
         cy.visit("/");
-
         cy.get('#login').click();
         cy.get('#login-form').within(() => {
             cy.get('#email').type('user@mail.com')
@@ -27,9 +26,7 @@ describe('User attempts to view his/her performance data', () => {
     it('successfully', () => {
         cy.get('#show-index').click()
         cy.get('#index').within(() => {
-            cy.contains('Below Average')
-            cy.contains('Average')
-            cy.contains('Above Average')
+            cy.get('#item-5').contains('Excellent')
         })
     })
 })
