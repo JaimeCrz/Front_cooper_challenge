@@ -1,4 +1,8 @@
-# [Cooper Challenge](https://festive-kowalevski-56e49c.netlify.app/)
+# [Cooper Challenge](https://cooper-challenge-56e49c.netlify.app/)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/962adb9d-db3b-4440-b903-7b3c83dd8d09/deploy-status)](https://app.netlify.com/sites/cooper-challenge-56e49c/deploys)
+
+[![Build Status](https://semaphoreci.com/api/v1/jaimecrz/front_cooper_challenge-2/branches/master/badge.svg)](https://semaphoreci.com/jaimecrz/front_cooper_challenge-2)
 
 
 This project is a Cooper test performance calculator that takes in consideration the meters that you were capable of running in 12 minutes as well as your age and makes the proper calculations showing you how good your performance is.
@@ -79,7 +83,8 @@ User can calculate their performance in the cooper challenge:
 
 ## Deployment [WIP]
 
-This app will be deployed soon in netlify.
+* [Netlify](https://www.netlify.com/)
+* [Heroku](https://www.heroku.com/)
 
 ## Built With
 
@@ -92,18 +97,11 @@ This app will be deployed soon in netlify.
 ## Contributing
 
 ## Authors
-
-* **Jaime Cruz** - (hhttps://github.com/JaimeCrz/)
-* **Anish** - 
+[Jaime Cruz](https://github.com/JaimeCrz/)
+[Anish](https://github.com/Anish2504)
 
 
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments [WIP]
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
